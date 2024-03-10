@@ -18,9 +18,6 @@ class LengthPolicy : public Policy {
 private:
     uint16_t minLength, maxLength;
 
-//- clasa trebuie să conțină un constructor public cu 1 parametru, care să inițializeze minimul cu valoarea dată și maximul cu valoarea 255.
-//- clasa trebuie să conțină un constructor public cu 2 parametri, care să inițializeze minimul și maximul cu valorile date.
-//- clasele trebuie să implementeze metoda check din clasa de bază. Aceasta trebuie să verifice ceea ce este specificat în cerință.
 public:
     LengthPolicy(uint16_t minim) {
         minLength = minim;
@@ -41,11 +38,7 @@ public:
     }
 };
 
-//Să se creeze o clasă cu numele ClassPolicy cu următoarele specificații:
-//- clasa trebuie să fie moștenită din clasa Policy.
-//- clasa trebuie să conțină 1 atribut privat numit minClassCount, acesta fiind un număr întreg fără semn pe 16 biți.
-//- clasa trebuie să conțină un constructor public cu 1 parametru, care să inițializeze atributul cu valoarea specificată.
-//- clasele trebuie să implementeze metoda check din clasa de bază. Aceasta trebuie să verifice ceea ce este specificat în cerință.
+
 class ClassPolicy : public Policy {
 private:
     uint16_t minClassCount = 0;
